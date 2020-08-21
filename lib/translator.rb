@@ -7,8 +7,8 @@ def load_library(file_path)
   YAML.load_file(yaml_file).each do |mood,emoji, english, japanese|
     emoticons = {
       mood => {
-         :english => emoji,
-         :japanese => emoji
+         english => emoji,
+         japanese => emoji
   }
 }
 
