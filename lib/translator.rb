@@ -1,14 +1,14 @@
 # require modules here
 require "yaml"
-def load_library(file_path)
+
   def load_library(yaml_file)
   emoticons = {}
 
   YAML.load_file(yaml_file).each do |mood,emoji, english, japanese|
     emoticons = {
       mood => {
-         english => emoji,
-         japanese => emoji
+         :english => emoji,
+         :japanese => emoji
   }
 }
 
